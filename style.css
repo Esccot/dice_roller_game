@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff1e6;
+}
+
+.dice-container {
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  align-items: center;
+  gap: 100px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #cb997e;
+  color: white;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #ddbea9;
+  transform: scale(1.05);
+  box-shadow: 0, 6px, 8px, rgba(0, 0, 0, 0.5);
+}
+
+.winner-icon {
+  height: 50px;
+  vertical-align: middle;
+}
+
+.left-win {
+  color: green;
+}
+
+.right-win {
+  color: red;
+}
+
+.draw {
+  color: #6c757d;
+}
+
+.roll {
+  animation: spin 2s linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
